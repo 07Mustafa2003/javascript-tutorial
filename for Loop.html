@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First JavaScript Page</title>
+</head>
+<body>
+    <script>
+        // Your JavaScript code goes here
+
+
+        /* The for loop is a common choice for iterating over a range of values or the elements of an array. It consists of three parts: initialization, condition, and increment/decrement. Here's a basic example:*/ 
+        for (let i = 0; i < 5; i++) {
+    console.log(i); // Outputs 0, 1, 2, 3, 4
+}
+// The for...in loop is used to iterate over the properties of an object. It's useful for working with objects and their keys:
+const person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}
+// The for...of loop is used to iterate over the values of iterable objects like arrays and strings. It's a more concise way to loop through elements:
+const fruits = ["apple", "banana", "cherry"];
+
+for (const fruit of fruits) {
+    console.log(fruit); // Outputs apple, banana, cherry
+}
+/* . Loop Control Statements:
+JavaScript provides loop control statements that allow you to modify the loop's behavior:
+
+break: Terminates the loop and continues with the next code block.
+continue: Skips the current iteration and continues to the next one.
+Here's an example of using break and continue:*/ 
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        break; // Exit the loop when i is 3
+    }
+    console.log(i); // Outputs 0, 1, 2
+}
+
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        continue; // Skip the iteration when i is 3
+    }
+    console.log(i); // Outputs 0, 1, 2, 4
+}
+/*Nested Loops
+You can also nest loops inside each other to create more complex iteration patterns. For example, you can use nested loops to work with multi-dimensional arrays or create grid-like structures.*/
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        console.log("i: " + i + ", j: " + j);
+    }
+}
+
+    </script>
+</body>
+</html>

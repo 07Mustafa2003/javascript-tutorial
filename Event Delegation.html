@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First JavaScript Page</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    
+    <script>
+        // Your JavaScript code goes here
+        /*Event delegation is a technique where you attach a single event listener to a common ancestor of multiple elements you want to monitor. It's more efficient and avoids attaching listeners to each element individually.
+
+*/
+document.getElementById("myList").addEventListener("click", function(event) {
+    if (event.target.tagName === "LI") {
+        alert("You clicked on: " + event.target.innerText);
+    }
+});
+    </script>
+</body>
+</html>

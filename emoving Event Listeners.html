@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First JavaScript Page</title>
+</head>
+<body>
+    <button id="myButton">Click Me</button>
+    <script>
+        // Your JavaScript code goes here
+
+        var button = document.getElementById("myButton");
+
+function handleClick() {
+    alert("Button clicked!");
+}
+
+button.addEventListener("click", handleClick);
+
+// Remove the event listener
+// button.removeEventListener("click", handleClick);
+
+    </script>
+</body>
+</html>

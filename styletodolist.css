@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 15 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 15px 0 10px rgba(60, 0, 200, 0.2);
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    box-shadow: 15px 0 10px rgba(60, 0, 200, 0.2);
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: disc;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.delete {
+  
+    color: red;
+    cursor: pointer;
+    margin-left: 300px;
+}

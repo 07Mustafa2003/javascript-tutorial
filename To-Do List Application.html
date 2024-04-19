@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First JavaScript Page</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: blanchedalmond;
+
+
+
+        }
+        #container{
+            border: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Project Description:
+Create a basic to-do list application that allows 
+users to add, remove, and mark tasks 
+as completed. This project will involve working with HTML, CSS, and JavaScript. -->
+
+<div id="container">
+    <form action="">
+        <input type="text"   id="taskInput"  placeholder="do  a task"> 
+    </form>
+    
+        <ul id="list">
+    
+        </ul>
+        <button id="addTask"> add</button>
+       
+
+</div>
+
+
+
+    <script>
+        const listes= document.getElementById("list");
+        const textinput=document.getElementById("taskInput").value;
+        const addTask=document.getElementById("addTask")
+
+
+
+
+        addTask.addEventListener('click',function(){
+            const taskText = textinput.value.trim();
+
+
+            if(textinput!==""){
+                var listitem=document.createElement("<li>");
+             listitem.innerHTML=
+             "<input type='checkbox'>  <span> ${taskText} </span> <button> delete </button>"
+
+
+             listes.appendChild(listitem)
+             textinput.value = "";
+                
+            }
+            
+
+        })
+
+        
+        // Your JavaScript code goes here
+    </script>
+</body>
+</html>

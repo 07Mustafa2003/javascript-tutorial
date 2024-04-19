@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First JavaScript Page</title>
+</head>
+<body>
+    <button id="myButton">  submit</button>
+    <script>
+        // Your JavaScript code goes here
+        /*. Event Types:
+JavaScript supports various event types, including:
+
+Mouse Events: Such as click, hover, mouseover, mouseout, etc.
+Keyboard Events: For keyboard input, like keydown, keyup, and keypress.
+Form Events: Related to forms, such as submit, input, change, etc.
+Document/Window Events: Events related to the document or window, such as load, resize, and scroll.
+Custom Events: You can create custom events for your application's specific needs*/
+
+var button = document.getElementById("myButton");
+
+button.addEventListener("click", function() {
+    alert("Button clicked!");
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First JavaScript Page</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Submit</button>
+    </form>    
+    <script>
+        // Your JavaScript code goes here
+        /*The input and change events are useful for real-time validation and dynamic updates as the user interacts with form fields. For instance, you can check the strength of a password as the user types:*/ 
+        var passwordInput = document.getElementById("password");
+
+passwordInput.addEventListener("input", function() {
+    var password = passwordInput.value;
+    
+    // Perform password strength validation and provide feedback
+    // Update a strength meter or show/hide messages based on input
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First JavaScript Page</title>
+</head>
+<body>
+    <button id="myButton">  submit</button>
+    <script>
+        // Your JavaScript code goes here
+        /*When an event occurs, an event object is created, and it contains information about the event. You can access this object in your event handler function.*/ 
+        var button = document.getElementById("myButton");
+
+button.addEventListener("click", function(event) {
+    console.log("Mouse coordinates: X = " + event.clientX + ", Y = " + event.clientY);
+});
+
+    </script>
+</body>
+</html>
